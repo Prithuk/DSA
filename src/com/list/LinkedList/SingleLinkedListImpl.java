@@ -7,9 +7,14 @@ public class SingleLinkedListImpl {
         singlyLinkedList.addNodeBeginning("Singh");
         singlyLinkedList.addNodeBeginning("PRITHU");
         singlyLinkedList.addNodeLast("YES");
+//        singlyLinkedList.printList();
+//        singlyLinkedList.deleteLast();
+//        System.out.println("After deletion first");
         singlyLinkedList.printList();
-        singlyLinkedList.deleteLast();
-        System.out.println("After deletion first");
+
+        System.out.println("Reverse");
+//        singlyLinkedList.reverseIterate();
+        singlyLinkedList.head=singlyLinkedList.reverseRecursive(singlyLinkedList.head);
         singlyLinkedList.printList();
     }
 }
