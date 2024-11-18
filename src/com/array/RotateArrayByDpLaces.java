@@ -11,7 +11,6 @@ public class RotateArrayByDpLaces {
         System.out.println("Enter no of times you want to rotate");
         int dTimes = sc.nextInt();
         dTimes = dTimes % n;
-
         int[] temp = {1, 2, 3};
 
         //for shifting
@@ -27,6 +26,5 @@ public class RotateArrayByDpLaces {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-
     }
 }

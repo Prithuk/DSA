@@ -9,7 +9,6 @@ public class CheckArraySorted {
         System.out.println(status);
     }
 
-
     public static boolean isArraySorted(int[] data) {
         for (int i = 1; i < data.length; i++) {
             if (data[i] >= data[i - 1]) {

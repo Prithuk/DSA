@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Union_and_Intersection_Optimal {
-
     public static void main(String[] args) {
-
-        int[] arr1 = {2, 3, 4, 7, 8};
+        int[] arr1 = {2, 2, 3, 4, 7, 8};
         int[] arr2 = {1, 2, 4, 6, 7, 8, 10, 10};
         int arr1Length = arr1.length;
         int arr2Length = arr2.length;
@@ -54,10 +52,8 @@ public class Union_and_Intersection_Optimal {
                 j++;
             }
         }
-
         for (int data : list) {
             System.out.print(data + " ");
         }
     }
-
 }
