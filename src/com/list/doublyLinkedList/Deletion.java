@@ -1,7 +1,5 @@
 package com.list.doublyLinkedList;
 
-import java.security.PrivilegedExceptionAction;
-
 public class Deletion {
 
     public static void main(String[] args) {
@@ -25,12 +23,15 @@ public class Deletion {
 //        NodeDouble updatedData = deleteAtHead(e);
 //        printList(updatedData);
 
-        d= deleteAtTail(d);
-        printList(d);
+//        d = deleteAtTail(d);
+//        printList(d);
+
+        NodeDouble updatedData = deleteAtAnyIndex(a, 0);
+        printList(updatedData);
     }
 
     public static NodeDouble deleteAtHead(NodeDouble head) {
-        if (head == null || head.next==null) {
+        if (head == null || head.next == null) {
             return null;
         }
         head = head.next;
@@ -56,6 +57,21 @@ public class Deletion {
         return head; // Return the updated head of the list
     }
 
+    public static NodeDouble deleteAtAnyIndex(NodeDouble head, int index) {
+
+        if (index == 0) {
+            head = head.next;
+            head.previous = null;
+            return head;
+        }
+        NodeDouble temp = head;
+        for (int i = 1; i < index; i++) {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+        temp.next.previous = temp;
+        return head;
+    }
 
     public static void printList(NodeDouble head) {
         if (head == null) {

@@ -3,7 +3,7 @@ package com.list;
 import java.util.List;
 import java.util.Vector;
 
-public class ArrayList {
+public class ArrayList<S> {
 
     public static void main(String[] args) {
         List<Employee> employeeList = new Vector<>();
@@ -19,4 +19,6 @@ public class ArrayList {
         Object [] list = employeeList.toArray();
         System.out.println(list);
     }
+
+
 }

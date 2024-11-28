@@ -14,7 +14,6 @@ public class BubbleSort {
             }
         }
         printArray(arr);
-
     }
 
     public static void printArray(int array[]) {

@@ -3,7 +3,6 @@ package com.sortingalgorithm;
 public class SelectionSortSmallest {
     public static void main(String[] args) {
         int[] array = {10, 4, 7, 2, 1, 9, 6};
-
         System.out.println("Original array: ");
         printArray(array);
 
@@ -18,7 +17,6 @@ public class SelectionSortSmallest {
             int temp = array[minIndex];
             array[minIndex] = array[i];
             array[i] = temp;
-
             System.out.println("Iteration " + (i + 1) + ": ");
             printArray(array);
         }
